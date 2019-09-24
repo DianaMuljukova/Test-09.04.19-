@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <section class="head">
+
+<header class="wrapper">
+    <div class="inner head">
         <img src="images/logo.png">
         <nav>
             <a>Home</a>
@@ -17,137 +18,149 @@
             <a>PORTFOLIO</a>
             <a>CONTACT</a>
         </nav>
-    </section>
-
-    <section class="main_page">
-    <section class="title">
-        <h1>
-            Luis Oenrique
-        </h1>
-        <p>
-            User Experience / User Interface Expert
-        </p>
-        <div class="buttons">
-           <input type="submit" name="info" class="button info" value="Know more">
-            <input type="submit" name="hire" class="button hire" value="Hire me">
-        </div>
-    </section>
-
-    <section>
-       <img src="images/face.png">
-    </section>
-    </section>
+    </div>
 </header>
 
-<section class="about">
-    <section class="text_about">
-        <h1>
-            KNOW MORE<br>
-            ABOUT ME
-        </h1>
-
-        <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-        </p>
-
-        <input type="submit" value="Download my cv" class="button cv">
-
-    </section>
-
-    <section class="img_about">
-        <img src="images/about.png">
-    </section>
-
-</section>
-
-<section class="services">
-    <h1 class="headline">Services</h1>
-    <ul>
-        <li>
-            <img src="images/icons/1.png">
-            <img src="images/icons/2.png">
-            <img src="images/icons/3.png">
-        </li>
-        <li>
-            <img src="images/icons/4.png">
-            <img src="images/icons/5.png">
-            <img src="images/icons/6.png">
-        </li>
-    </ul>
-
-</section>
-
-<section class="skills">
-    <h1 class="headline">
-        My skills
-    </h1>
-    <div>
-    <img src="images/skillboard.png"></div>
-
-</section>
-
-<section class="portfolio">
-   <h1 class="headline">Portfolio</h1>
-
-    <ul>
-        <li>
-            <img src="images/potrfolio/1.png">
-            <img src="images/potrfolio/2.png">
-            <img src="images/potrfolio/3.png">
-        </li>
-        <li>
-            <img src="images/potrfolio/4.png">
-            <img src="images/potrfolio/5.png">
-            <img src="images/potrfolio/6.png">
-        </li>
-    </ul>
-    <input type="submit" class="button info " value="Load more">
-</section>
-
-<section class="testimonials">
-    <h1 class="headline">testimonials</h1>
-    <div class="review">
-        <img src="images/img.png">
-        <article>
-            <h2>
-                Limara Tusu
-            </h2>
-            <span>CEO, RanDOM COMPANY</span>
+<section class="wrapper main-page_wrapper">
+    <div class="inner main-page">
+        <div class="title">
+            <h1>
+                Luis Oenrique
+            </h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                User Experience / User Interface Expert
+            </p>
+            <div class="buttons">
+                <input type="submit" name="info" class="button" value="Know more">
+                <input type="submit" name="hire" class="button" value="Hire me">
+            </div>
+        </div>
+
+        <img src="images/man-main.png" class="main-page_img">
+
+    </div>
+</section>
+
+
+<section class="about_wrapper">
+    <div class="about inner">
+        <div class="text_about">
+            <h1>
+                KNOW MORE<br>
+                ABOUT ME
+            </h1>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
             </p>
 
-        </article>
-        <div class="shadow">
+            <button class="button cv">Download my cv</button>
 
+        </div>
+
+        <div class="img_about">
+            <img src="images/about.png">
         </div>
     </div>
 </section>
 
-<footer>
-    <h1 class="footer_headline">
-        Say Hello
-    </h1>
-    <form>
-        <input type="text" class="text" placeholder="Name">
-        <input type="text" class="text" placeholder="Email"><br>
-        <textarea>Message </textarea><br>
-        <input type="submit" value="Send" class="send">
-    </form>
+<section class="services_wrapper wrapper">
+    <div class="inner services">
+        <h1 class="services_headline">Services</h1>
+        <div class="services_icons">
+            <div class="services_icons_wrapper">
+                <img src="images/icons/1.png">
+            </div>
+            <div class="services_icons_wrapper">
+                <img src="images/icons/2.png">
+            </div>
+            <div class="services_icons_wrapper">
+                <img src="images/icons/3.png">
+            </div>
+            <div class="services_icons_wrapper">
+                <img src="images/icons/4.png">
+            </div>
+            <div class="services_icons_wrapper">
+                <img src="images/icons/5.png">
+            </div>
+            <div class="services_icons_wrapper">
+                <img src="images/icons/6.png">
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section class="end">
-        <div class="social">
-            <a><img src="images/social/facebook.png"></a>
-            <a><img src="images/social/twitter.png"></a>
-            <a><img src="images/social/linkedlin.png"></a>
-            <a><img src="images/social/google.png"></a>
-            <a><img src="images/social/behance.png"></a>
-            <a><img src="images/social/dribble.png"></a>
-        </div>
-        <div class="copy">
-            2017. All Right Reserved
-        </div>
-    </section>
-</footer>
+<section class="skills_wrapper wrapper">
+    <div class="inner skills">
+    <h1 class="services_headline">
+        My skills
+    </h1>
+    <div>
+        <img src="images/skillboard.png"></div>
+    </div>
+</section>
+
+<section class="services_wrapper wrapper">
+    <div class="inner portfolio">
+    <h1 class="services_headline">
+        Portfolio
+    </h1>
+    <div class="portfolio_items">
+            <img src="images/potrfolio/1.png">
+            <img src="images/potrfolio/2.png">
+            <img src="images/potrfolio/3.png">
+            <img src="images/potrfolio/4.png">
+            <img src="images/potrfolio/5.png">
+            <img src="images/potrfolio/6.png">
+    </div>
+        <button class="button portfolio_button">Load more</button>
+    </div>
+</section>
+
+<!--<section class="testimonials">-->
+<!--    <h1 class="headline">testimonials</h1>-->
+<!--    <div class="review">-->
+<!--        <img src="images/img.png">-->
+<!--        <article>-->
+<!--            <h2>-->
+<!--                Limara Tusu-->
+<!--            </h2>-->
+<!--            <span>CEO, RanDOM COMPANY</span>-->
+<!--            <p>-->
+<!--                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,-->
+<!--            </p>-->
+
+<!--        </article>-->
+<!--        <div class="shadow">-->
+
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<footer>-->
+<!--    <h1 class="footer_headline">-->
+<!--        Say Hello-->
+<!--    </h1>-->
+<!--    <form>-->
+<!--        <input type="text" class="text" placeholder="Name">-->
+<!--        <input type="text" class="text" placeholder="Email"><br>-->
+<!--        <textarea>Message </textarea><br>-->
+<!--        <input type="submit" value="Send" class="send">-->
+<!--    </form>-->
+
+<!--    <section class="end">-->
+<!--        <div class="social">-->
+<!--            <a><img src="images/social/facebook.png"></a>-->
+<!--            <a><img src="images/social/twitter.png"></a>-->
+<!--            <a><img src="images/social/linkedlin.png"></a>-->
+<!--            <a><img src="images/social/google.png"></a>-->
+<!--            <a><img src="images/social/behance.png"></a>-->
+<!--            <a><img src="images/social/dribble.png"></a>-->
+<!--        </div>-->
+<!--        <div class="copy">-->
+<!--            2017. All Right Reserved-->
+<!--        </div>-->
+<!--    </section>-->
+<!--</footer>-->
 </body>
 </html>
