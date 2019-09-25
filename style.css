@@ -239,28 +239,28 @@ nav a:hover {
     box-shadow: 5px 5px 5px #e0e0e0;
 }
 
+.testimonials_wrapper {
+    padding-bottom: 200px;
+}
+
 .review {
     display: flex;
     border: 1px solid black;
-    width: 975px;
-    height: 350px;
+    width: 80%;
     margin: 0 auto;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 90px;
+    position: relative;
 }
 
-.testimonials {
-    padding-bottom: 200px;
-}
 .review img {
-    width: 170px;
-    height: 162px;
     margin-right: 20px;
 }
 
 .review article {
-    width: 590px;
-    height: 170px;
+    width: 60%;
 }
 
 .review article h2 {
@@ -269,8 +269,7 @@ nav a:hover {
     font-size: 30px;
 }
 
-.review article  span {
-
+.review article span {
     font-size: 12px;
     font-style: italic;
 }
@@ -279,115 +278,128 @@ nav a:hover {
     text-transform: uppercase;
 }
 
-.shadow {
-    width: 10px;
-    height: 10px;
-    background-color: black;
-    border: 1px solid black;
-    box-shadow: 20px 0 0 0 gray,
-    -20px 0 0 0 gray;
-    align-self: flex-end;
-    text-align: center;
+.decor-blocks {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+}
 
+.decor-block {
+    width: 14px;
+    height: 14px;
+    border: 1px solid black;
+    margin-right: 5px;
+}
+
+.decor-block:nth-child(2) {
+    background-color: black;
+}
+
+.decor-block:last-child {
+    margin-right: 0;
+}
+
+.benefits-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.benefit {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.benefit p {
+    margin: 0;
+}
+
+.benefit img {
+    margin-bottom: 15px;
+    height: 80px;
+}
+
+p.benefit_item {
+    font-size: 22px;
+    margin-top: 20px;
 }
 
 footer {
     background-image: url("images/contact_bg.png");
     padding-top: 50px;
-    opacity: 0.5;
     background-size: cover;
-}
-
-footer h1 {
-    color: #d5e1f2;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    font-size: 46px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
     position: relative;
-    margin-bottom: 80px;
-
 }
 
-footer h1::before {
-    content: "";
-    width: 64px;
+.form {
+    position: relative;
+}
 
-    border-bottom: 5px solid;
-    border-color: #d5e1f2;
+.form .services_headline {
+    color: white;
+}
+
+.form .services_headline::before {
+    border-color: white;
+}
+
+.cover {
     position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.3;
 }
 
-form {
-    text-align: center;
-    margin-right: 120px;
-    margin-left: 120px;
-    border-bottom: 1px solid white;
-
-}
-.text {
-    width: 375px;
-    height: 60px;
-    background-image: url("images/bg.png");
-    outline: none;
-    color: black;
-    border: none;
-    margin-right: 20px;
+.inputs {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
-
 }
 
-form input:nth-of-type(2) {
-    margin-right: 0;
+.text {
+    width: 48%;
+    border: none;
+    outline: none;
+    padding: 10px 0 10px 5px;
 }
-
-input::-webkit-input-placeholder {
-    color: black;
-}
-
 
 textarea {
-    width: 770px;
-    height: 209px;
-    margin-right: -20px;
-
-    padding-top: 10px;
-    padding-left: 5px;
-    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px 0 10px 5px;
 }
 
-.send {
-    width: 127px;
-    height: 50px;
-    text-transform: uppercase;
+.form form {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.send_button {
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 55px;
     background-image: url("images/send-button.png");
     background-repeat: no-repeat;
     background-position: 90%;
-    margin-bottom: 80px;
-    outline: none;
-    border: none;
-}
-
-.copy {
-    color: white;
-    margin-left: 560px;
 }
 
 .end {
     display: flex;
     align-items: center;
-    padding: 40px 0 80px 50px;
+    border-top: 1px solid white;
+    padding: 25px 0 35px;
 }
 .social a{
     margin-right: 10px;
 }
 
-.social {
-    margin-left: 70px;
+.copy {
+    color: white;
+    margin-left: 255px;
 }
