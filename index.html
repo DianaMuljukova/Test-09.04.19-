@@ -4,19 +4,32 @@
     <meta charset="UTF-8">
     <title>Site</title>
     <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css">
 </head>
 <body>
 
 <header class="wrapper">
     <div class="inner head">
         <img src="images/logo.png">
-        <nav>
-            <a>Home</a>
-            <a>About</a>
-            <a>SERVICE</a>
-            <a>PORTFOLIO</a>
-            <a>CONTACT</a>
+        <i class="fas fa-bars"></i>
+        <nav class="big-screen-nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">SERVICE</a>
+            <a href="#">PORTFOLIO</a>
+            <a href="#">CONTACT</a>
+        </nav>
+        <nav class="hidden-nav">
+            <i class="fas fa-times"></i>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">SERVICE</a>
+            <a href="#">PORTFOLIO</a>
+            <a href="#">CONTACT</a>
         </nav>
     </div>
 </header>
@@ -200,5 +213,21 @@
     </div>
 
 </footer>
+
 </body>
+<script>
+    const nav = document.querySelector('.hidden-nav');
+    let bar = document.querySelector('.head .fa-bars');
+    let exit = document.querySelector('.hidden-nav .fa-times');
+    bar.onclick = function () {
+        nav.style.opacity = '1';
+        nav.style.zIndex = '30';
+        bar.style.opacity = '0';
+    };
+    exit.onclick = function () {
+        nav.style.opacity = '0';
+        nav.style.zIndex = '0';
+        bar.style.opacity = '1';
+    }
+</script>
 </html>

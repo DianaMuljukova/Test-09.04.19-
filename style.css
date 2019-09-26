@@ -5,6 +5,8 @@ html {
 
 a {
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
 * {
@@ -62,11 +64,31 @@ nav a:hover {
     border-color: gray;
 }
 
+.hidden-nav {
+    opacity: 0;
+    position: fixed;
+    background-color: #d7d7d7;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    top: 15px;
+    right: 15px;
+}
+
+.hidden-nav .fa-times {
+    text-align: right;
+    cursor: pointer;
+}
+
+.head .fa-bars {
+    display: none;
+}
+
 .main-page {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 80px 0 0;
+    padding-top: 80px;
 }
 
 .main-page_wrapper {
@@ -84,6 +106,7 @@ nav a:hover {
     font-size: 90px;
     margin-bottom: 10px;
 }
+
 .title p {
     padding: 0;
     margin: 0 0 40px 0;
@@ -121,7 +144,9 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 115px 0 120px;
+    padding-top: 115px;
+    padding-bottom: 120px;
+    flex-wrap: wrap;
 }
 
 .text_about {
@@ -141,6 +166,8 @@ nav a:hover {
     border-bottom: 5px solid #4d4d4d;
     position: absolute;
     top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .text_about p {
@@ -181,7 +208,7 @@ nav a:hover {
 
 .services_headline::before {
     content: "";
-    width: 5%;
+    width: 10%;
     border-bottom: 5px solid #4d4d4d;
     position: absolute;
     top: -10%;
@@ -305,6 +332,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .benefit {

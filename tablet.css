@@ -1,0 +1,48 @@
+@media screen and (max-width: 768px){
+    .inner {
+        width: 100%;
+    }
+
+    .main-page {
+        display: block;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .title {
+        text-align: center;
+        padding-top: 150px;
+        z-index: 10;
+        position: relative;
+    }
+
+    .main-page_img {
+        opacity: 0.5;
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .text_about {
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .img_about {
+        width: 100%;
+    }
+
+    .skills img {
+        width: 100%;
+    }
+
+    .portfolio_items img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,54 @@
+@media screen and (max-width: 540px) {
+    .big-screen-nav {
+        display: none;
+    }
+
+    .head .fa-bars {
+        display: block;
+        margin-right: auto;
+        margin-left: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .services_icons_wrapper {
+        width: 50%;
+    }
+
+    .benefit {
+       width: 50%;
+    }
+
+    .end {
+        flex-direction: column;
+    }
+
+    .copy {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .review {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .main-page_img {
+        width: 100%;
+    }
+
+    .title h1 {
+        font-size: 50px;
+    }
+
+    .services_icons_wrapper {
+        width: 100%;
+    }
+
+    .services_headline {
+        font-size: 30px;
+    }
+}
