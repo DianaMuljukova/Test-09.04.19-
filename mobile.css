@@ -1,18 +1,27 @@
 @media screen and (max-width: 540px) {
+
     .big-screen-nav {
         display: none;
     }
 
+
     .head .fa-bars {
         display: block;
-        margin-right: auto;
-        margin-left: 30px;
         color: white;
         cursor: pointer;
+        z-index: 50;
+    }
+
+    .main-page_img {
+        width: 80%;
     }
 
     .services_icons_wrapper {
         width: 50%;
+    }
+
+    .portfolio_items img {
+        width: 100%;
     }
 
     .benefit {
@@ -30,8 +39,15 @@
 
     .review {
         flex-direction: column;
-        text-align: center;
         align-items: center;
+    }
+
+    .review img {
+        margin-right: 0;
+    }
+
+    .review article {
+        text-align: center;
     }
 }
 

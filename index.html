@@ -16,6 +16,7 @@
     <div class="inner head">
         <img src="images/logo.png">
         <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
         <nav class="big-screen-nav">
             <a href="#">Home</a>
             <a href="#">About</a>
@@ -24,7 +25,6 @@
             <a href="#">CONTACT</a>
         </nav>
         <nav class="hidden-nav">
-            <i class="fas fa-times"></i>
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">SERVICE</a>
@@ -45,7 +45,7 @@
                     User Experience / User Interface Expert
                 </p>
                 <div class="buttons">
-                    <input type="submit" name="info" class="button" value="Know more">
+                    <input type="submit" name="info" class="button info" value="Know more">
                     <input type="submit" name="hire" class="button" value="Hire me">
                 </div>
             </div>
@@ -131,7 +131,7 @@
         </div>
     </section>
 
-    <section class="services_wrapper wrapper">
+    <section class="wrapper skills_wrapper">
         <div class="inner testimonials">
             <h1 class="services_headline">testimonials</h1>
             <div class="review">
@@ -155,7 +155,7 @@
         </div>
     </section>
 
-    <section class="wrapper services_wrapper">
+    <section class="wrapper services_wrapper benefits_wrapper">
         <div class="inner benefits-row">
             <div class="benefit">
                 <img src="images/study.png" alt="">
@@ -216,18 +216,26 @@
 
 </body>
 <script>
-    const nav = document.querySelector('.hidden-nav');
-    let bar = document.querySelector('.head .fa-bars');
-    let exit = document.querySelector('.hidden-nav .fa-times');
-    bar.onclick = function () {
-        nav.style.opacity = '1';
-        nav.style.zIndex = '30';
-        bar.style.opacity = '0';
-    };
-    exit.onclick = function () {
-        nav.style.opacity = '0';
-        nav.style.zIndex = '0';
-        bar.style.opacity = '1';
-    }
+
+        const nav = document.querySelector('.hidden-nav');
+        let bar = document.querySelector('.head .fa-bars');
+        let exit = document.querySelector('.head .fa-times');
+
+        bar.onclick = function () {
+            nav.style.opacity = '1';
+            nav.style.zIndex = '30';
+            bar.style.display = 'none';
+            exit.style.display = 'block';
+            exit.style.zIndex = '100'
+        };
+        exit.onclick = function () {
+            nav.style.opacity = '0';
+            nav.style.zIndex = '0';
+            bar.style.display = 'block';
+            exit.style.display = 'none';
+        };
+    
+
+
 </script>
 </html>

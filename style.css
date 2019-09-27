@@ -18,6 +18,7 @@ body {
     font-size: 18px;
     color: #4d4d4d;
     width: 100%;
+    background-color: white;
 }
 
 .wrapper {
@@ -71,17 +72,24 @@ nav a:hover {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    top: 10px;
+    right: 10px;
+}
+
+.head .fa-times {
+    display: none;
+    text-align: right;
+    cursor: pointer;
+    position: fixed;
     top: 15px;
     right: 15px;
 }
 
-.hidden-nav .fa-times {
-    text-align: right;
-    cursor: pointer;
-}
-
 .head .fa-bars {
     display: none;
+    position: fixed;
+    top: 15px;
+    right: 15px;
 }
 
 .main-page {
@@ -116,6 +124,12 @@ nav a:hover {
 
 .buttons {
     display: flex;
+}
+
+.buttons .info {
+    background-color: white;
+    border-color: transparent;
+    box-shadow: 5px 20px 25px 5px #cccccc;
 }
 
 .button {
@@ -158,22 +172,20 @@ nav a:hover {
     font-size: 46px;
     margin-bottom: 20px;
     position: relative;
-
+    display: inline-block;
 }
 .text_about h1::before {
     content: "";
-    width: 10%;
+    width: 20%;
     border-bottom: 5px solid #4d4d4d;
     position: absolute;
-    top: -10%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: -20%;
+    left: 0;
 }
 
 .text_about p {
     padding: 0;
-    margin: 0;
-    margin-bottom: 40px;
+    margin: 0 0 40px 0;
 }
 
 .button.cv {
@@ -208,10 +220,10 @@ nav a:hover {
 
 .services_headline::before {
     content: "";
-    width: 10%;
+    width: 5%;
     border-bottom: 5px solid #4d4d4d;
     position: absolute;
-    top: -10%;
+    top: -30%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -227,7 +239,7 @@ nav a:hover {
 .services_icons_wrapper {
     width: 30%;
     height: 30%;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 
 .skills_wrapper {
@@ -252,7 +264,14 @@ nav a:hover {
 .portfolio_items img {
     width: 30%;
     height: 100%;
-    margin: 10px;
+    margin: 15px;
+    box-shadow: 10px 20px 25px 5px #cccccc;
+    transition: 0.3s;
+}
+
+.portfolio_items img:hover {
+    box-shadow: 10px 20px 25px 10px #bbbbbb;
+    cursor: pointer;
 }
 
 .portfolio_button {
@@ -263,7 +282,7 @@ nav a:hover {
 }
 
 .portfolio_button:hover {
-    box-shadow: 5px 5px 5px #e0e0e0;
+    box-shadow: 5px 10px 15px #e0e0e0;
 }
 
 .testimonials_wrapper {
@@ -328,6 +347,10 @@ nav a:hover {
     margin-right: 0;
 }
 
+.benefits_wrapper {
+    margin-bottom: 155px;
+}
+
 .benefits-row {
     display: flex;
     align-items: center;
@@ -362,6 +385,13 @@ footer {
     position: relative;
 }
 
+.form form {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+
 .form {
     position: relative;
 }
@@ -372,6 +402,11 @@ footer {
 
 .form .services_headline::before {
     border-color: white;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: black;
 }
 
 .cover {
@@ -394,18 +429,12 @@ footer {
     width: 48%;
     border: none;
     outline: none;
-    padding: 10px 0 10px 5px;
+    padding: 20px 0 20px 5px;
 }
 
 textarea {
     width: 100%;
     padding: 10px 0 10px 5px;
-}
-
-.form form {
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
 }
 
 .send_button {
@@ -415,6 +444,7 @@ textarea {
     background-image: url("images/send-button.png");
     background-repeat: no-repeat;
     background-position: 90%;
+    width: 120px;
 }
 
 .end {
